@@ -1,0 +1,38 @@
+{
+  "name": "jwt-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel-node": "babel-node ./source/js/index.js",
+    "dev:start": "nodemon --exec npm run babel-node",
+    "lint-staged": "lint-staged"
+  },
+  "pre-commit": "lint-staged",
+  "lint-staged": {
+    "*.js": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mordenius/jwt-intro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mordenius/jwt-intro/issues"
+  },
+  "homepage": "https://github.com/mordenius/jwt-intro#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-bbt": "0.0.6",
+    "eslint": "^4.18.1",
+    "eslint-config-bbt": "^1.0.1",
+    "jasmine": "^3.0.0",
+    "lint-staged": "^7.0.0",
+    "nodemon": "^1.15.1",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.11.0"
+  }
+}
