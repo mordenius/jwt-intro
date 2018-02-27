@@ -1,11 +1,9 @@
-const jwt = require("jsonwebtoken");
+import Server from "./httpServer";
 
-const data = {
-	id: 8,
-	chopCode: "MITKV06"
+class Main {
+	static async init() {
+		await Server.start();
+	}
 }
 
-const token = jwt.sign(data, 'secret');
-
-console.log(token);
-
+Main.init();
